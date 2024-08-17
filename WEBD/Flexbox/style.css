@@ -1,3 +1,10 @@
+/* 
+1 - Justify-content : It aligns the items of the container along the main axis of the flexbox
+2 - Align-items : It aligns the items of the container along the cross axis
+3 - Align- content : It specifies the between the items at any cross axis point. This property is used when there is more than one line of flex items (i.e.,    when wrapping is enabled).
+4 - Align-self : It focuses on a particular item ... we can say that align-items smaller version ... like align-items applies align-self to all the items in one go 
+
+ */
 * {
     margin: 0;
     padding: 0;
@@ -59,11 +66,15 @@ h1 {
 .container {
     margin: 10px ;
     padding: 10px;
-    height: 800px;
-    width: 800px;
+    height: 700px;
+    width: 600px;
     background-color: lavender;
     border: 4px solid black;
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
     
 }
 
@@ -102,4 +113,4 @@ h1 {
     margin: 8px;
     background-color: palevioletred;
     border: 2px solid black;
-}
+} 
