@@ -44,17 +44,24 @@ button:active {
 }
 
 @keyframes move {
-    from{left:30px}
-    to{left:90px}
+    from{left:20px}
+    to{left:500px}
 }
 
 
 .box {
     height: 70px;
     width: 70px;
+    padding:5px;
     position: relative;
     top:50px;
     left: 20px;
     background-color: lightcoral;
-    animation
+    /* animation-name: move;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate; */
+    animation: move 2s ease-in-out 0s infinite alternate;
 }
