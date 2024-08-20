@@ -7,38 +7,30 @@
     width: 600px;
     height: 25px;
     background-color: darkgrey;
-    border-radius: 5px;
+    border-radius: 25px;
     margin: 20px;
     position: relative;
-    border: 2px solid red;
+    border: 2px solid rgb(0, 0, 0);
 }
 
 /* Actual progress bar */
 .progress_bar {
     height: 100%;
     width: 0;
-    background-color: rgb(207, 16, 224);
-    border-radius: 5px;
-    animation: fill 3s ease-in-out forwards, bounce 0.5s ease-out 3s forwards;
+    background-color: rgb(241, 6, 57);
+    border-radius: 55px;
+    animation: progress 2s ;
 }
 
-/* Keyframe animation to fill the progress bar */
-@keyframes fill {
+@keyframes progress {
     0% {
-        width: 0;
+        width: 0%;
     }
-    100% {
-        width: 100%;
-    }
-}
-
-/* Keyframe animation for the slight bounce effect at the end */
-@keyframes bounce {
-    0% {
+    90% {
         width: 95%;
     }
-    50% {
-        width: 98%;
+    95% {
+        width: 70%;
     }
     100% {
         width: 100%;
