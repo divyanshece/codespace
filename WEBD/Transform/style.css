@@ -1,0 +1,30 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+/* CSS transition - It is a property that enables smooth animation between
+changes in CSS property values */
+/* CSS Transform - It is a property that enables modification of an element's shape and position. */
+button {
+    margin: 60px;
+    padding: 5px;
+    border: 2px solid red;
+    height: 45px;
+    width: 90px;
+   
+}
+button:hover {
+    background-color: rgb(10, 207, 233);
+    border-radius: 10px;
+    height: 50px;
+    width: 95px; 
+    transition: all 0.1s ease-in-out ;
+
+}
+button:active {
+    background-color: rgb(13, 120, 243);
+    border: 2px solid black;
+    border-radius: 15px;
+    transition: all 0.1s ease-in-out ;
+
+}
