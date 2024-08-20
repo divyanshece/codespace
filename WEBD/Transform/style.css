@@ -7,15 +7,26 @@
 changes in CSS property values */
 /* CSS Transform - It is a property that enables modification of an element's shape and position.
 It can perform actions like rotate, scale, skew and tramslate.*/
+/* CSS Animation - It is a property used to animate the properties. It works like a function w, if once defined then it can be used always just by calling.
+basic format of defining the anmimations in css : 
+@keyframes animation-name {
+    from {
+        CSS----
+    }
+    to { 
+        CSS------
+    }
+}  */
 
 button {
-    margin: 60px;
+    margin: 20px;
     padding: 5px;
     border: 2px solid red;
     height: 45px;
     width: 90px;
    
 }
+
 button:hover {
     background-color: rgb(10, 207, 233);
     border-radius: 10px;
@@ -28,6 +39,22 @@ button:active {
     background-color: rgb(13, 120, 243);
     border: 2px solid black;
     border-radius: 15px;
+    transform: translate(-3px,-3px);
     transition: all 0.1s ease-in-out ;
+}
 
+@keyframes move {
+    from{left:30px}
+    to{left:90px}
+}
+
+
+.box {
+    height: 70px;
+    width: 70px;
+    position: relative;
+    top:50px;
+    left: 20px;
+    background-color: lightcoral;
+    animation
 }
