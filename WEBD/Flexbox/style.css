@@ -105,7 +105,15 @@ h1 {
     background-color: rgb(232, 11, 240);
     border: 2px solid black;
 }
-.boxx4 {
+
+@media screen and (max-width:500px) {
+    .boxx3 {
+        background-color: rgb(188, 238, 7);   
+    }
+    
+}
+
+/* .boxx4 {
     box-sizing: border-box;
     height: 140px;
     width: 140px;
@@ -113,4 +121,4 @@ h1 {
     margin: 8px;
     background-color: palevioletred;
     border: 2px solid black;
-} 
+}  */
