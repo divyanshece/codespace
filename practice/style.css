@@ -1,0 +1,27 @@
+* {
+    margin: 0;
+    padding: 0;
+} 
+.nav {
+    height: 30px;
+    width: auto;
+    padding: 10px;
+    background-color: aquamarine;
+    text-decoration: none;
+    display: flex;
+    justify-content: space-evenly;
+}
+.container {
+    height: 200px;
+    width: 200px;
+    margin: 20px;
+    padding: 10px;
+    display: flex;
+    background-image: url(../images/css.jpeg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: red;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid black;
+}
