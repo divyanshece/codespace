@@ -13,6 +13,22 @@
 .items a {
     text-decoration: none;
 }
+
+.media {
+    height: 50px;
+    width: 50px;
+    background-color: green;
+}
+@media screen and (max-width:400px) and (min-width:300px) {
+    .media {
+        background-color: red;
+    }
+}
+@media screen and (min-width:400px) {
+    .media {
+        background-color: blue;
+    }
+}
 .img_container {
     height: 300px;
     width: 300px;
@@ -34,12 +50,13 @@
 
 .container {
     height: 400px;
-    width: 400px;
+    width: 500px;
     margin: 20px;
     padding: 10px;
     background-color: turquoise;
     box-sizing: border-box;
     display: flex;
+    justify-content: space-around;
 }
 .box {
     margin: 10px;
@@ -48,9 +65,10 @@
     width: 80px;
     box-sizing: border-box;
     background-color: yellow;
+    flex-shrink: 0;
 }
 #box3 {
     display: flex;
-    flex-grow: 1.2;
-    /* flex-shrink: 0.5; */
+    flex-grow: 1;
+    flex-shrink: 1;
 }
